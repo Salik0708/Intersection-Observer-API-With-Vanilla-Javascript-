@@ -1,0 +1,31 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+p {
+  line-height: 20px;
+  color: #333;
+}
+
+.container {
+  height: 1800px;
+  width: 500px;
+  margin: 100px auto;
+}
+
+.animated-text {
+  font-size: 30px;
+  text-align: center;
+  opacity: 0;
+  transform: translateY(100px);
+  transition: opacity 1s ease, transform 1s ease;
+}
+
+.animated-text.visible {
+  opacity: 1;
+  transform: translateX(0);
+}

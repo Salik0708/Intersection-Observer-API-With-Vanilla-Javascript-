@@ -1,0 +1,56 @@
+body {
+  font-family: "Averia serif libre";
+  background-color: crimson;
+  color: aliceblue;
+}
+
+#warning {
+  color: beige;
+  background: red;
+  padding: 10px;
+}
+
+article {
+  width: 600px;
+  margin: auto;
+  margin-top: 50px;
+}
+
+h2 {
+  margin-top: 50px;
+  text-transform: uppercase;
+  font-size: 18pt;
+  text-align: center;
+}
+
+@media (max-width: 620px) {
+  article {
+    width: 90vw;
+  }
+}
+
+#count {
+  text-align: center;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  color: black;
+  background-color: beige;
+  z-index: 1;
+  left: 0;
+}
+
+hr {
+  border: none;
+  border-top: 2px dashed;
+  text-align: center;
+  margin-top: 50px;
+}
+
+hr:after {
+  background: crimson;
+  content: "end of article";
+  padding: 0 10px;
+  position: relative;
+  top: -0.4em;
+}
